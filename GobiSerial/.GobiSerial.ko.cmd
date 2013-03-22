@@ -1,1 +1,0 @@
-cmd_/home/tethr/GobiSerial/GobiSerial.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-3.2.0-23-generic/scripts/module-common.lds --build-id  -o /home/tethr/GobiSerial/GobiSerial.ko /home/tethr/GobiSerial/GobiSerial.o /home/tethr/GobiSerial/GobiSerial.mod.o
