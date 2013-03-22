@@ -407,7 +407,7 @@ int GobiOpen(
       }
       if (bytesWrote != sizeof( startMessage ))
       {
-         DBG( "invalid write size %d, %d\n", 
+         DBG( "invalid write size %d, %ld\n", 
               bytesWrote, 
               sizeof( startMessage ) );
          return -EIO;
@@ -483,7 +483,7 @@ void GobiClose( struct usb_serial_port * pPort )
       }
       if (bytesWrote != sizeof( stopMessage ))
       {
-         DBG( "invalid write size %d, %d\n", 
+         DBG( "invalid write size %d, %ld\n", 
               bytesWrote, 
               sizeof( stopMessage ) );
       }      
