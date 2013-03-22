@@ -1008,7 +1008,7 @@ int GobiUSBNetStop( struct net_device * pNet )
 static const struct driver_info GobiNetInfo = 
 {
    .description   = "GobiNet Ethernet Device",
-   .flags         = FLAG_ETHER,
+   .flags         = FLAG_ETHER | FLAG_POINTTOPOINT,
    .bind          = GobiNetDriverBind,
    .unbind        = GobiNetDriverUnbind,
    .data          = 0,
